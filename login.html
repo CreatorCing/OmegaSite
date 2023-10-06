@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Stay Omega!">
+    <meta name="keywords" content="Video Games, Omega, Games, Game Guides">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="submitGuide.html">Submit Guide</a>
+        <a href="gamesShowcase.html">Games Showcase</a>
+        <a href="blog.html">Blog</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <form action="processSignup.php" method="post">
+      <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button id="login" type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember">Remember Me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class=cancelbtn>Cancel</button>
+        <span class="psw">Forgot <a href="forgotPsw.html">password?</a></span>
+      </div>
+    </form>
+</body>
+</html>
